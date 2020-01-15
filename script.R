@@ -9,5 +9,3 @@ summary(lm(y~log(x)))
 #Pointless comment
 
 print("I hate biscuits!!!!!")
-
-Actually I love biscuits
