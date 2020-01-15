@@ -6,3 +6,4 @@ y <- rnorm(10)
 plot(y~log(x))
 summary(lm(y~log(x)))
 
+#Pointless comment
