@@ -1,0 +1,43 @@
+---
+title: "Squirrel Day RMarkdown"
+author: "Andy Purvis"
+date: "15/01/2020"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Very big title
+## Less big title
+### Not-at-all-big title
+
+- dashes give bullet points
+- like these
+
+1. Putting a number and a dot gives a numbered list
+1. ... even if, as here, I've used the same number for each item
+
+```{r}
+#This bit will be in R as I started it with the weird syntax
+#It stays in R until I end it. This is therefore an R chunk (technical term)
+#Press the green arrow to the right to run the R code
+
+print("Hello world!")
+```
+```{r}
+str(iris)
+pairs(iris[,1:4])
+```
+```{r}
+library(tidyverse)
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, colour = Species)) + geom_point()
+```
+
+
+
+
