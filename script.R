@@ -1,3 +1,8 @@
 # My R script for squirrel_day
 
-print("Hello world!")
+#Linear regression of random numbers vs log(1:10)
+x <- c(1:10)
+y <- rnorm(10)
+plot(y~log(x))
+summary(lm(y~log(x)))
+
